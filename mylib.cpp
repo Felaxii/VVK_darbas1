@@ -1,30 +1,38 @@
 #include "mylib.h"
 
 studentas::studentas() {
+	srand(time(0)); // [SEEDAS RANDOM GENERATORIUI]
+
 	cout << "Iveskite studento varda: "; cin >> vard;
 	cout << "Iveskite studento pavarde: "; cin >> pav;
+
 	cout << "Kiek pazymiu buvo semestre? ";
 	int n; cin >> n;
+
+	paz.resize(n);
+
 	for (int i = 0; i < n; i++) {
-		int k;
-		cout << "Ivesk " << i + 1 << " semestro pazymi: "; cin >> k; paz.push_back(k);
+		int k = rand() % 10 + 1; 
+		paz[i] = k;
 	}
-	cout << "Iveskite egzamino pazymi: "; cin >> egz;
-	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid(); // 'm' - mediana, 'v' - vidurkis
+
+	egz = rand() % 10 + 1;
+
+	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
 }
 
-studentas::studentas(string v, string p, vector<int> pp, int e) // 4. constructor with parameters
+studentas::studentas(string v, string p, vector<int> pp, int e)
 {
 	vard = v; pav = p; paz = pp; egz = e;
 	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
 }
-studentas::studentas(const studentas& temp) // 1. copy constructor
+studentas::studentas(const studentas& temp)
 {
 	vard = temp.vard; pav = temp.pav;
 	paz = temp.paz; egz = temp.egz;
 	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
 }
-studentas& studentas:: operator=(const studentas& temp) // 2. copy assignment operator 
+studentas& studentas:: operator=(const studentas& temp)
 {
 	if (this == &temp) return *this;
 	vard = temp.vard; pav = temp.pav;
@@ -32,7 +40,7 @@ studentas& studentas:: operator=(const studentas& temp) // 2. copy assignment op
 	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
 	return *this;
 }
-studentas::~studentas() // 3. destructor
+studentas::~studentas()
 {
 	vard.clear(); pav.clear(); paz.clear();
 	egz = 0; rez = 0;
@@ -50,13 +58,11 @@ void studentas::printasRez() {
 }
 
 void studentas::rezVid() {
-	// rez = vid * 0.4 + egz * 0.6;
 	float sum = std::accumulate(paz.begin(), paz.end(), 0.0);
 	rez = sum / paz.size() * 0.4 + egz * 0.6;
 }
 
 void studentas::rezMed() {
-	// rez = vid * 0.4 + egz * 0.6;
 	rez = mediana(paz) * 0.4 + egz * 0.6;
 }
 
@@ -81,7 +87,7 @@ void studentas::operator>>(std::istream& input) {
 		cout << "Ivesk " << i + 1 << " semestro pazymi: "; input >> k; paz.push_back(k);
 	}
 	cout << "Iveskite egzamino pazymi: "; input >> egz;
-	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid();
+	skaiciavimo_Strategija == 'm' ? rezMed() : rezVid(); 
 }
 
 
@@ -94,6 +100,4 @@ void studentas::operator<<(std::ostream& output) {
 	output << "Egzamino pazymys: " << egz << endl;
 	output << "Galutinis balas: " << fixed << setprecision(2) << rez << endl;
 }
-
-
 

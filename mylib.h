@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <numeric>
 #include <string>
@@ -5,6 +6,8 @@
 #include <vector>
 #include <iomanip>
 #include <algorithm>
+#include <cstdlib>
+#include <ctime> 
 
 using std::string;
 using std::cout;
@@ -24,32 +27,29 @@ extern char skaiciavimo_Strategija;
 extern string failoVardas;
 
 class studentas {
-	string vard, pav;
-	vector<int> paz;
-	int egz;
-	float rez;
+	string vard, pav; 
+	vector<int> paz;  
+	int egz;		  
+	float rez;		  
 public:
-	studentas();
-	studentas(string v, string p, vector<int>pp, int e);
-	studentas(const studentas& temp);
-	studentas& operator=(const studentas& temp);
-	~studentas();
+	studentas();                                         
+	studentas(string v, string p, vector<int>pp, int e); 
+	studentas(const studentas& temp);					 
+	studentas& operator=(const studentas& temp);		
+	~studentas();										
 
-	inline string getVardas() { return vard; }
-	inline int getPazNr() { return paz.size(); }
+	inline string getVardas() { return vard; }			 
+	inline size_t getPazNr() { return paz.size(); }	     
 
-	inline void setVardas(string t) { vard = t; }
+	inline void setVardas(string t) { vard = t; }        
 
-	void printas();
-	void printasRez();
-	void rezVid();
-	void rezMed();
+	void printas();    
+	void printasRez(); 
+	void rezVid();     
+	void rezMed();     
 
+	double mediana(vector<int> vec);    
 
-
-	double mediana(vector<int> vec);
-
-	void operator>>(std::istream& input);
-	void operator<<(std::ostream& out);
-	//double galBalas(double egzaminas, const vector<double>& nd, double (*kriterijus)(vector<double>) = mediana);
+	void operator>>(std::istream& input);  
+	void operator<<(std::ostream& output); 
 };
