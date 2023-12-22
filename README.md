@@ -2,6 +2,6 @@
 
 Pakeitimai: 
 
-  * Studentu rušiavimas į dvi grupes
-  * Konteineris studentu informacijai saugoti
+  * Studentu rušiavimas į dvi grupes.
+  * Konteineris studentu informacijai saugoti.
   
