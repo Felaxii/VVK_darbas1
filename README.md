@@ -3,4 +3,5 @@
 Pakeitimai: 
 
   * Studentu rušiavimas į dvi grupes
+  * Konteineris studentu informacijai saugoti
   
