@@ -1,4 +1,5 @@
-VVK 2023 
+VVK Žygimantas Grušas, 2023
+
 # Balų Skaičiuoklis
 
 ## Instrukcija:
