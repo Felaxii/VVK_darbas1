@@ -2,12 +2,12 @@
 
 Pakeitimai: 
 
-  * Studentu rušiavimas
-  * Kodo sutvarkimas
-  * Studentu generacija
-  * Laiko matavimas
+  * Studentu rušiavimas.
+  * Kodo sutvarkimas.
+  * Studentu generacija.
+  * Laiko matavimas.
 
 Komentarai: 
 
-  * stude.txt nieko nerodo 
+  * stude.txt nieko nerodo.
    
