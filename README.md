@@ -6,3 +6,8 @@ Pakeitimai:
   * Kodo sutvarkimas
   * Studentu generacija
   * Laiko matavimas
+
+Komentarai: 
+
+  * stude.txt nieko nerodo 
+   
