@@ -1,0 +1,6 @@
+Vardas                   Pavarde                    ND1       ND2       ND3       ND4       ND5       ND6       ND7       ND8       ND9      ND10      Egz.
+Evaldas                  Mackonis                 6         1         3         
+Arnoldas                 Rackauskas               9         3         6         
+Alex                     Narusevic                1         6         4         
+Ernest                   Narusevic                8         2         8         
+Jonas                    Rapcevic                 4         3         2         
