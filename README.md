@@ -1,7 +1,7 @@
 VVK 2023 
-## Balų Skaičiuoklis
+# Balų Skaičiuoklis
 
-# Instrukcija:
+## Instrukcija:
 
 1. Įvesti studento(ų) vardą, pavarde ir pažymį.
 2. Pasirinkti ar norite skaičiuoti virudkį ar medianą.
