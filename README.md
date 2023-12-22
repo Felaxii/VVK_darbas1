@@ -2,8 +2,5 @@
 
 Pakeitimai: 
 
-  * Studentu rušiavimas
-
-  * Kodo sutvarkimas
-
-  * Matavimas
+  * Studentu rušiavimas į dvi grupes
+  
