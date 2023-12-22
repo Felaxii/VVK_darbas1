@@ -2,8 +2,8 @@
 
 Pakeitimai: 
 
-* Studentu rušiavimas
+  * Studentu rušiavimas
 
-* Kodo sutvarkimas
+  * Kodo sutvarkimas
 
-* Matavimas
+  * Matavimas
