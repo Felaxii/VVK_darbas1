@@ -2,5 +2,6 @@
 
 
 Pakeitimai: 
+
     * Programos greičio statusas ir algoritmo pritaikymas
 
