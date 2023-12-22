@@ -2,4 +2,4 @@
 
 Pakeitimai:
 
-* Studentų balų generavimas veikia
+* Studentų balų generavimas veikia.
